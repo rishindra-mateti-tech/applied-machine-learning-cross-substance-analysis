@@ -1,0 +1,27 @@
+\begin{table*}[t]
+\caption{Adjusted Odds Ratios with Approximate Model-Based 95\% Wald CIs and Benjamini-Hochberg FDR Control ($q=0.05$)}
+\label{tab:odds_ratios}
+\centering
+\resizebox{\textwidth}{!}{%
+\setlength{\tabcolsep}{4.5pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{lcccc}
+\hline \hline
+\textbf{Predictor Feature} & \textbf{Cannabis OR [95\% CI]} & \textbf{CNS Stimulants OR [95\% CI]} & \textbf{Psychedelics OR [95\% CI]} & \textbf{Depressants OR [95\% CI]} \\
+\hline
+\textbf{Age} & $\mathbf{0.4223}$ [0.3633, 0.4907]$^*$ & $\mathbf{0.5391}$ [0.4658, 0.6239]$^*$ & $\mathbf{0.3694}$ [0.3078, 0.4433]$^*$ & $\mathbf{0.8278}$ [0.7225, 0.9484]$^*$ \\
+\textbf{Gender (Female)} & $\mathbf{0.6832}$ [0.5914, 0.7893]$^*$ & $\mathbf{0.7777}$ [0.6799, 0.8896]$^*$ & $\mathbf{0.6309}$ [0.5388, 0.7387]$^*$ & $\mathbf{0.8387}$ [0.7342, 0.9581]$^*$ \\
+\textbf{Education} & $\mathbf{0.6189}$ [0.5360, 0.7147]$^*$ & 0.9296 [0.8099, 1.0671] & $\mathbf{0.7528}$ [0.6356, 0.8915]$^*$ & $\mathbf{0.8542}$ [0.7469, 0.9768]$^*$ \\
+\textbf{Neuroticism (Nscore)} & $\mathbf{0.8298}$ [0.7012, 0.9820]$^*$ & 1.1516 [0.9924, 1.3363] & 0.8367 [0.7031, 0.9956] & $\mathbf{1.5740}$ [1.3507, 1.8342]$^*$ \\
+\textbf{Impulsivity (BIS-11)} & 0.9722 [0.8122, 1.1638] & 1.1911 [1.0094, 1.4055] & 1.0347 [0.8511, 1.2579] & 1.0397 [0.8828, 1.2245] \\
+\textbf{Agreeableness (Ascore)} & 0.9861 [0.8506, 1.1432] & $\mathbf{0.8293}$ [0.7257, 0.9475]$^*$ & 1.0172 [0.8724, 1.1859] & $\mathbf{0.8415}$ [0.7377, 0.9599]$^*$ \\
+\textbf{Extraversion (Escore)} & $\mathbf{0.7216}$ [0.6060, 0.8592]$^*$ & 1.0283 [0.8862, 1.1931] & $\mathbf{0.7856}$ [0.6630, 0.9309]$^*$ & 1.0188 [0.8801, 1.1793] \\
+\textbf{Openness (Oscore)} & $\mathbf{2.4948}$ [2.1081, 2.9526]$^*$ & $\mathbf{1.2673}$ [1.1002, 1.4598]$^*$ & $\mathbf{2.3369}$ [1.9526, 2.7968]$^*$ & $\mathbf{1.3685}$ [1.1869, 1.5778]$^*$ \\
+\textbf{Conscientiousness (Cscore)} & $\mathbf{0.7759}$ [0.6563, 0.9172]$^*$ & $\mathbf{0.7958}$ [0.6857, 0.9237]$^*$ & 1.0676 [0.8998, 1.2668] & 0.9357 [0.8082, 1.0833] \\
+\textbf{Sensation Seeking (SS)} & $\mathbf{1.8078}$ [1.4842, 2.2020]$^*$ & $\mathbf{1.4126}$ [1.1864, 1.6819]$^*$ & $\mathbf{1.7028}$ [1.3802, 2.1009]$^*$ & $\mathbf{1.3445}$ [1.1279, 1.6026]$^*$ \\
+\hline \hline
+\end{tabular}%
+}
+\vspace{1pt}
+{\raggedright \footnotesize $^*$Statistically significant after Benjamini-Hochberg False Discovery Rate (FDR) control at $q = 0.05$ across all 40 hypothesis tests. Note: Confidence intervals represent approximate model-based Wald intervals under L2 ridge regularization.\par}
+\end{table*}

@@ -1,0 +1,1479 @@
+{
+  "cohort_metadata": {
+    "total_survey_records": 1885,
+    "excluded_overclaimers": 8,
+    "analyzed_cohort_size": 1877,
+    "predictors": [
+      "Age",
+      "Gender",
+      "Education",
+      "Nscore",
+      "Impulsive",
+      "Ascore",
+      "Escore",
+      "Oscore",
+      "Cscore",
+      "SS"
+    ],
+    "substance_classes": [
+      "Cannabis",
+      "CNS Stimulants",
+      "Psychedelics",
+      "Depressants"
+    ]
+  },
+  "unsupervised_topology": {
+    "k_values": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "davies_bouldin_mean": [
+      1.1163,
+      1.1804,
+      1.0893,
+      1.1595,
+      1.1823,
+      1.1652,
+      1.1662
+    ],
+    "davies_bouldin_std": [
+      0.0006,
+      0.0281,
+      0.0686,
+      0.0311,
+      0.0411,
+      0.056,
+      0.0307
+    ],
+    "silhouette_mean": [
+      0.3471,
+      0.2952,
+      0.2896,
+      0.2678,
+      0.2578,
+      0.255,
+      0.2562
+    ],
+    "silhouette_std": [
+      0.0005,
+      0.0104,
+      0.0082,
+      0.0097,
+      0.0113,
+      0.0105,
+      0.011
+    ],
+    "optimal_k": 4,
+    "kruskal_wallis_h": 554.4581,
+    "kruskal_wallis_p": 7.509505744241961e-120,
+    "cluster_mean_polysubstance": [
+      2.361,
+      0.8988,
+      1.45,
+      0.3433
+    ]
+  },
+  "five_fold_outer_cv": {
+    "Cannabis": {
+      "LR_Scratch": {
+        "acc": [
+          0.7922170212765958,
+          0.02602150511469666
+        ],
+        "f1": [
+          0.8024891959497887,
+          0.024074237398660922
+        ],
+        "auc": [
+          0.8710440293007002,
+          0.017586352224010983
+        ],
+        "pr_auc": [
+          0.8872082851725459,
+          0.01829275512763555
+        ],
+        "brier": [
+          0.14569260214664131,
+          0.010935763590718354
+        ]
+      },
+      "Random_Forest_Tuned": {
+        "acc": [
+          0.7847673758865248,
+          0.021280164428847958
+        ],
+        "f1": [
+          0.7938421639799599,
+          0.020754268787424535
+        ],
+        "auc": [
+          0.8664626544063483,
+          0.01865756384487544
+        ],
+        "pr_auc": [
+          0.8856789991006341,
+          0.020482196048049378
+        ],
+        "brier": [
+          0.15215111168755355,
+          0.008154152982623258
+        ]
+      },
+      "MLP": {
+        "acc": [
+          0.7890340425531914,
+          0.020515579876158693
+        ],
+        "f1": [
+          0.8010089613208191,
+          0.017034405681373682
+        ],
+        "auc": [
+          0.8691280117989939,
+          0.019676143377893897
+        ],
+        "pr_auc": [
+          0.8858337723380822,
+          0.022546423153838417
+        ],
+        "brier": [
+          0.1473461455938727,
+          0.012575775553434093
+        ]
+      }
+    },
+    "CNS Stimulants": {
+      "LR_Scratch": {
+        "acc": [
+          0.7405517730496454,
+          0.009383102983475722
+        ],
+        "f1": [
+          0.5527269151525245,
+          0.021793809510622198
+        ],
+        "auc": [
+          0.7910681929829262,
+          0.02595012396881705
+        ],
+        "pr_auc": [
+          0.6176443549705228,
+          0.04384403175335809
+        ],
+        "brier": [
+          0.16980538162446204,
+          0.00929818352562548
+        ]
+      },
+      "Random_Forest_Tuned": {
+        "acc": [
+          0.7400184397163121,
+          0.009086648819076752
+        ],
+        "f1": [
+          0.5179025141534438,
+          0.028487434774482838
+        ],
+        "auc": [
+          0.7904766971581154,
+          0.02731254255428099
+        ],
+        "pr_auc": [
+          0.6126814053156899,
+          0.052123545605521696
+        ],
+        "brier": [
+          0.17144718670579173,
+          0.007159354845684869
+        ]
+      },
+      "MLP": {
+        "acc": [
+          0.7373531914893617,
+          0.0124286261894181
+        ],
+        "f1": [
+          0.5301628738369589,
+          0.027688827954033334
+        ],
+        "auc": [
+          0.7835715834499783,
+          0.022820823786885915
+        ],
+        "pr_auc": [
+          0.6090511240296764,
+          0.03874611120118725
+        ],
+        "brier": [
+          0.17399767915997477,
+          0.008602666302016646
+        ]
+      }
+    },
+    "Psychedelics": {
+      "LR_Scratch": {
+        "acc": [
+          0.8124780141843972,
+          0.02028175044061942
+        ],
+        "f1": [
+          0.6389990005683597,
+          0.04787113606833898
+        ],
+        "auc": [
+          0.8648118863107264,
+          0.021698579635857865
+        ],
+        "pr_auc": [
+          0.6734384805574247,
+          0.04231153345982452
+        ],
+        "brier": [
+          0.130554432986946,
+          0.009266260477947777
+        ]
+      },
+      "Random_Forest_Tuned": {
+        "acc": [
+          0.7932851063829787,
+          0.015626726649731304
+        ],
+        "f1": [
+          0.57028552378247,
+          0.036658523965170345
+        ],
+        "auc": [
+          0.8568569827696904,
+          0.019736555344503512
+        ],
+        "pr_auc": [
+          0.6598130064876955,
+          0.051593969928684535
+        ],
+        "brier": [
+          0.13632748329687727,
+          0.006312092030802771
+        ]
+      },
+      "MLP": {
+        "acc": [
+          0.8119347517730496,
+          0.014455696545568972
+        ],
+        "f1": [
+          0.6497494996587547,
+          0.03058410670454495
+        ],
+        "auc": [
+          0.8624445340334546,
+          0.016720750990962138
+        ],
+        "pr_auc": [
+          0.6620979694903912,
+          0.05438080811672387
+        ],
+        "brier": [
+          0.1316301749595963,
+          0.009129485762004426
+        ]
+      }
+    },
+    "Depressants": {
+      "LR_Scratch": {
+        "acc": [
+          0.7293617021276596,
+          0.018576003175309705
+        ],
+        "f1": [
+          0.35898138269123336,
+          0.055559563311847776
+        ],
+        "auc": [
+          0.7395558436944241,
+          0.018318483228022098
+        ],
+        "pr_auc": [
+          0.5042666509448159,
+          0.050715064188176256
+        ],
+        "brier": [
+          0.17519439767557857,
+          0.006086137785182124
+        ]
+      },
+      "Random_Forest_Tuned": {
+        "acc": [
+          0.7320184397163121,
+          0.017085926632433152
+        ],
+        "f1": [
+          0.2713183445105215,
+          0.03284228191990928
+        ],
+        "auc": [
+          0.7336015297289608,
+          0.031169660844787526
+        ],
+        "pr_auc": [
+          0.5110891695858373,
+          0.049028250992818406
+        ],
+        "brier": [
+          0.1768747288218801,
+          0.007007595567783106
+        ]
+      },
+      "MLP": {
+        "acc": [
+          0.7197645390070921,
+          0.003968675191739196
+        ],
+        "f1": [
+          0.2524882699900993,
+          0.10573409276780747
+        ],
+        "auc": [
+          0.6951814127705098,
+          0.05383877578674635
+        ],
+        "pr_auc": [
+          0.45145776200479365,
+          0.03886224803886154
+        ],
+        "brier": [
+          0.18905503188465478,
+          0.015043359639882126
+        ]
+      }
+    }
+  },
+  "holdout_benchmarks": {
+    "Cannabis_Forward_Selected": {
+      "metrics": {
+        "accuracy": 0.7493,
+        "precision": 0.7989,
+        "recall": 0.702,
+        "specificity": 0.8023,
+        "f1_score": 0.7473,
+        "tn": 142.0,
+        "fp": 35.0,
+        "fn": 59.0,
+        "tp": 139.0,
+        "auc": 0.8433,
+        "pr_auc": 0.8614
+      },
+      "calibration": {
+        "brier_score": 0.1637,
+        "ece": 0.0452
+      },
+      "confidence_intervals_95": {
+        "accuracy_ci": [
+          0.704,
+          0.7947
+        ],
+        "f1_ci": [
+          0.6949,
+          0.7989
+        ],
+        "auc_ci": [
+          0.8029,
+          0.8809
+        ]
+      },
+      "features": [
+        "SS",
+        "Age",
+        "Gender",
+        "Oscore",
+        "Education",
+        "Escore",
+        "Impulsive",
+        "Nscore",
+        "Ascore"
+      ]
+    },
+    "Cannabis": {
+      "Majority": {
+        "accuracy": 0.528,
+        "precision": 0.528,
+        "recall": 1.0,
+        "specificity": 0.0,
+        "f1_score": 0.6911,
+        "tn": 0.0,
+        "fp": 177.0,
+        "fn": 0.0,
+        "tp": 198.0,
+        "auc": 0.5,
+        "pr_auc": 0.528
+      },
+      "LR_Scratch": {
+        "metrics": {
+          "accuracy": 0.76,
+          "precision": 0.8103,
+          "recall": 0.7121,
+          "specificity": 0.8136,
+          "f1_score": 0.7581,
+          "tn": 144.0,
+          "fp": 33.0,
+          "fn": 57.0,
+          "tp": 141.0,
+          "auc": 0.8527,
+          "pr_auc": 0.871
+        },
+        "calibration": {
+          "brier_score": 0.1584,
+          "ece": 0.0401
+        },
+        "confidence_intervals_95": {
+          "accuracy_ci": [
+            0.712,
+            0.8027
+          ],
+          "f1_ci": [
+            0.7044,
+            0.805
+          ],
+          "auc_ci": [
+            0.8126,
+            0.8882
+          ]
+        }
+      },
+      "LR_Sklearn_Parity": {
+        "metrics": {
+          "accuracy": 0.76,
+          "precision": 0.8103,
+          "recall": 0.7121,
+          "specificity": 0.8136,
+          "f1_score": 0.7581,
+          "tn": 144.0,
+          "fp": 33.0,
+          "fn": 57.0,
+          "tp": 141.0,
+          "auc": 0.8528,
+          "pr_auc": 0.8713
+        }
+      },
+      "Random_Forest_Baseline": {
+        "metrics": {
+          "accuracy": 0.752,
+          "precision": 0.8,
+          "recall": 0.7071,
+          "specificity": 0.8023,
+          "f1_score": 0.7507,
+          "tn": 142.0,
+          "fp": 35.0,
+          "fn": 58.0,
+          "tp": 140.0,
+          "auc": 0.848,
+          "pr_auc": 0.8614
+        },
+        "calibration": {
+          "brier_score": 0.1602,
+          "ece": 0.0401
+        },
+        "confidence_intervals_95": {
+          "accuracy_ci": [
+            0.7067,
+            0.7947
+          ],
+          "f1_ci": [
+            0.703,
+            0.7981
+          ],
+          "auc_ci": [
+            0.81,
+            0.8851
+          ]
+        }
+      },
+      "Random_Forest_Tuned": {
+        "metrics": {
+          "accuracy": 0.7227,
+          "precision": 0.764,
+          "recall": 0.6869,
+          "specificity": 0.7627,
+          "f1_score": 0.7234,
+          "tn": 135.0,
+          "fp": 42.0,
+          "fn": 62.0,
+          "tp": 136.0,
+          "auc": 0.8381,
+          "pr_auc": 0.8577
+        },
+        "calibration": {
+          "brier_score": 0.1675,
+          "ece": 0.0878
+        },
+        "confidence_intervals_95": {
+          "accuracy_ci": [
+            0.6747,
+            0.768
+          ],
+          "f1_ci": [
+            0.6667,
+            0.7719
+          ],
+          "auc_ci": [
+            0.7965,
+            0.8754
+          ]
+        },
+        "best_params": {
+          "max_depth": 4,
+          "min_samples_split": 2
+        }
+      },
+      "MLP": {
+        "metrics": {
+          "accuracy": 0.7653,
+          "precision": 0.8274,
+          "recall": 0.702,
+          "specificity": 0.8362,
+          "f1_score": 0.7596,
+          "tn": 148.0,
+          "fp": 29.0,
+          "fn": 59.0,
+          "tp": 139.0,
+          "auc": 0.8519,
+          "pr_auc": 0.8624
+        },
+        "calibration": {
+          "brier_score": 0.1579,
+          "ece": 0.0411
+        },
+        "confidence_intervals_95": {
+          "accuracy_ci": [
+            0.7227,
+            0.8107
+          ],
+          "f1_ci": [
+            0.708,
+            0.808
+          ],
+          "auc_ci": [
+            0.8125,
+            0.8878
+          ]
+        },
+        "iterations_to_convergence": 51
+      }
+    },
+    "CNS Stimulants": {
+      "Majority": {
+        "accuracy": 0.6791,
+        "precision": 0.0,
+        "recall": 0.0,
+        "specificity": 1.0,
+        "f1_score": 0.0,
+        "tn": 254.0,
+        "fp": 0.0,
+        "fn": 120.0,
+        "tp": 0.0,
+        "auc": 0.5,
+        "pr_auc": 0.3209
+      },
+      "LR_Scratch": {
+        "metrics": {
+          "accuracy": 0.7433,
+          "precision": 0.6277,
+          "recall": 0.4917,
+          "specificity": 0.8622,
+          "f1_score": 0.5514,
+          "tn": 219.0,
+          "fp": 35.0,
+          "fn": 61.0,
+          "tp": 59.0,
+          "auc": 0.7979,
+          "pr_auc": 0.599
+        },
+        "calibration": {
+          "brier_score": 0.1687,
+          "ece": 0.0557
+        },
+        "confidence_intervals_95": {
+          "accuracy_ci": [
+            0.7005,
+            0.7888
+          ],
+          "f1_ci": [
+            0.4705,
+            0.6352
+          ],
+          "auc_ci": [
+            0.7475,
+            0.8422
+          ]
+        }
+      },
+      "LR_Sklearn_Parity": {
+        "metrics": {
+          "accuracy": 0.7433,
+          "precision": 0.6277,
+          "recall": 0.4917,
+          "specificity": 0.8622,
+          "f1_score": 0.5514,
+          "tn": 219.0,
+          "fp": 35.0,
+          "fn": 61.0,
+          "tp": 59.0,
+          "auc": 0.7979,
+          "pr_auc": 0.5992
+        }
+      },
+      "Random_Forest_Baseline": {
+        "metrics": {
+          "accuracy": 0.738,
+          "precision": 0.6222,
+          "recall": 0.4667,
+          "specificity": 0.8661,
+          "f1_score": 0.5333,
+          "tn": 220.0,
+          "fp": 34.0,
+          "fn": 64.0,
+          "tp": 56.0,
+          "auc": 0.7962,
+          "pr_auc": 0.6106
+        },
+        "calibration": {
+          "brier_score": 0.1673,
+          "ece": 0.0355
+        },
+        "confidence_intervals_95": {
+          "accuracy_ci": [
+            0.6924,
+            0.7834
+          ],
+          "f1_ci": [
+            0.4525,
+            0.6087
+          ],
+          "auc_ci": [
+            0.7455,
+            0.8424
+          ]
+        }
+      },
+      "Random_Forest_Tuned": {
+        "metrics": {
+          "accuracy": 0.746,
+          "precision": 0.6582,
+          "recall": 0.4333,
+          "specificity": 0.8937,
+          "f1_score": 0.5226,
+          "tn": 227.0,
+          "fp": 27.0,
+          "fn": 68.0,
+          "tp": 52.0,
+          "auc": 0.7952,
+          "pr_auc": 0.5986
+        },
+        "calibration": {
+          "brier_score": 0.1702,
+          "ece": 0.0449
+        },
+        "confidence_intervals_95": {
+          "accuracy_ci": [
+            0.6979,
+            0.7914
+          ],
+          "f1_ci": [
+            0.4351,
+            0.6029
+          ],
+          "auc_ci": [
+            0.7468,
+            0.8401
+          ]
+        },
+        "best_params": {
+          "max_depth": 4,
+          "min_samples_split": 5
+        }
+      },
+      "MLP": {
+        "metrics": {
+          "accuracy": 0.7299,
+          "precision": 0.6338,
+          "recall": 0.375,
+          "specificity": 0.8976,
+          "f1_score": 0.4712,
+          "tn": 228.0,
+          "fp": 26.0,
+          "fn": 75.0,
+          "tp": 45.0,
+          "auc": 0.7879,
+          "pr_auc": 0.6002
+        },
+        "calibration": {
+          "brier_score": 0.1719,
+          "ece": 0.0529
+        },
+        "confidence_intervals_95": {
+          "accuracy_ci": [
+            0.6871,
+            0.7754
+          ],
+          "f1_ci": [
+            0.3867,
+            0.5562
+          ],
+          "auc_ci": [
+            0.7372,
+            0.8335
+          ]
+        },
+        "iterations_to_convergence": 29
+      }
+    },
+    "Psychedelics": {
+      "Majority": {
+        "accuracy": 0.7227,
+        "precision": 0.0,
+        "recall": 0.0,
+        "specificity": 1.0,
+        "f1_score": 0.0,
+        "tn": 271.0,
+        "fp": 0.0,
+        "fn": 104.0,
+        "tp": 0.0,
+        "auc": 0.5,
+        "pr_auc": 0.2773
+      },
+      "LR_Scratch": {
+        "metrics": {
+          "accuracy": 0.7893,
+          "precision": 0.6404,
+          "recall": 0.5481,
+          "specificity": 0.8819,
+          "f1_score": 0.5907,
+          "tn": 239.0,
+          "fp": 32.0,
+          "fn": 47.0,
+          "tp": 57.0,
+          "auc": 0.8317,
+          "pr_auc": 0.5902
+        },
+        "calibration": {
+          "brier_score": 0.1509,
+          "ece": 0.0578
+        },
+        "confidence_intervals_95": {
+          "accuracy_ci": [
+            0.7493,
+            0.824
+          ],
+          "f1_ci": [
+            0.4926,
+            0.6601
+          ],
+          "auc_ci": [
+            0.7892,
+            0.8687
+          ]
+        }
+      },
+      "LR_Sklearn_Parity": {
+        "metrics": {
+          "accuracy": 0.7867,
+          "precision": 0.6333,
+          "recall": 0.5481,
+          "specificity": 0.8782,
+          "f1_score": 0.5876,
+          "tn": 238.0,
+          "fp": 33.0,
+          "fn": 47.0,
+          "tp": 57.0,
+          "auc": 0.8318,
+          "pr_auc": 0.59
+        }
+      },
+      "Random_Forest_Baseline": {
+        "metrics": {
+          "accuracy": 0.776,
+          "precision": 0.6111,
+          "recall": 0.5288,
+          "specificity": 0.8708,
+          "f1_score": 0.567,
+          "tn": 236.0,
+          "fp": 35.0,
+          "fn": 49.0,
+          "tp": 55.0,
+          "auc": 0.8258,
+          "pr_auc": 0.6006
+        },
+        "calibration": {
+          "brier_score": 0.1492,
+          "ece": 0.0535
+        },
+        "confidence_intervals_95": {
+          "accuracy_ci": [
+            0.7333,
+            0.8133
+          ],
+          "f1_ci": [
+            0.4651,
+            0.6425
+          ],
+          "auc_ci": [
+            0.7793,
+            0.8634
+          ]
+        }
+      },
+      "Random_Forest_Tuned": {
+        "metrics": {
+          "accuracy": 0.7733,
+          "precision": 0.6377,
+          "recall": 0.4231,
+          "specificity": 0.9077,
+          "f1_score": 0.5087,
+          "tn": 246.0,
+          "fp": 25.0,
+          "fn": 60.0,
+          "tp": 44.0,
+          "auc": 0.8226,
+          "pr_auc": 0.5965
+        },
+        "calibration": {
+          "brier_score": 0.1486,
+          "ece": 0.0352
+        },
+        "confidence_intervals_95": {
+          "accuracy_ci": [
+            0.7307,
+            0.8133
+          ],
+          "f1_ci": [
+            0.4,
+            0.596
+          ],
+          "auc_ci": [
+            0.7746,
+            0.8616
+          ]
+        },
+        "best_params": {
+          "max_depth": 4,
+          "min_samples_split": 5
+        }
+      },
+      "MLP": {
+        "metrics": {
+          "accuracy": 0.784,
+          "precision": 0.6322,
+          "recall": 0.5288,
+          "specificity": 0.8819,
+          "f1_score": 0.5759,
+          "tn": 239.0,
+          "fp": 32.0,
+          "fn": 49.0,
+          "tp": 55.0,
+          "auc": 0.847,
+          "pr_auc": 0.6214
+        },
+        "calibration": {
+          "brier_score": 0.1421,
+          "ece": 0.057
+        },
+        "confidence_intervals_95": {
+          "accuracy_ci": [
+            0.7413,
+            0.8213
+          ],
+          "f1_ci": [
+            0.4767,
+            0.6537
+          ],
+          "auc_ci": [
+            0.8033,
+            0.8833
+          ]
+        },
+        "iterations_to_convergence": 50
+      }
+    },
+    "Depressants": {
+      "Majority": {
+        "accuracy": 0.7173,
+        "precision": 0.0,
+        "recall": 0.0,
+        "specificity": 1.0,
+        "f1_score": 0.0,
+        "tn": 269.0,
+        "fp": 0.0,
+        "fn": 106.0,
+        "tp": 0.0,
+        "auc": 0.5,
+        "pr_auc": 0.2827
+      },
+      "LR_Scratch": {
+        "metrics": {
+          "accuracy": 0.7093,
+          "precision": 0.4667,
+          "recall": 0.1981,
+          "specificity": 0.9108,
+          "f1_score": 0.2781,
+          "tn": 245.0,
+          "fp": 24.0,
+          "fn": 85.0,
+          "tp": 21.0,
+          "auc": 0.7326,
+          "pr_auc": 0.459
+        },
+        "calibration": {
+          "brier_score": 0.178,
+          "ece": 0.0692
+        },
+        "confidence_intervals_95": {
+          "accuracy_ci": [
+            0.664,
+            0.7573
+          ],
+          "f1_ci": [
+            0.189,
+            0.3699
+          ],
+          "auc_ci": [
+            0.6769,
+            0.7875
+          ]
+        }
+      },
+      "LR_Sklearn_Parity": {
+        "metrics": {
+          "accuracy": 0.712,
+          "precision": 0.4773,
+          "recall": 0.1981,
+          "specificity": 0.9145,
+          "f1_score": 0.28,
+          "tn": 246.0,
+          "fp": 23.0,
+          "fn": 85.0,
+          "tp": 21.0,
+          "auc": 0.7313,
+          "pr_auc": 0.4551
+        }
+      },
+      "Random_Forest_Baseline": {
+        "metrics": {
+          "accuracy": 0.7307,
+          "precision": 0.5641,
+          "recall": 0.2075,
+          "specificity": 0.9368,
+          "f1_score": 0.3034,
+          "tn": 252.0,
+          "fp": 17.0,
+          "fn": 84.0,
+          "tp": 22.0,
+          "auc": 0.7289,
+          "pr_auc": 0.4896
+        },
+        "calibration": {
+          "brier_score": 0.1767,
+          "ece": 0.0341
+        },
+        "confidence_intervals_95": {
+          "accuracy_ci": [
+            0.688,
+            0.7787
+          ],
+          "f1_ci": [
+            0.2149,
+            0.4001
+          ],
+          "auc_ci": [
+            0.6743,
+            0.7853
+          ]
+        }
+      },
+      "Random_Forest_Tuned": {
+        "metrics": {
+          "accuracy": 0.7227,
+          "precision": 0.55,
+          "recall": 0.1038,
+          "specificity": 0.9665,
+          "f1_score": 0.1746,
+          "tn": 260.0,
+          "fp": 9.0,
+          "fn": 95.0,
+          "tp": 11.0,
+          "auc": 0.73,
+          "pr_auc": 0.4835
+        },
+        "calibration": {
+          "brier_score": 0.1775,
+          "ece": 0.0563
+        },
+        "confidence_intervals_95": {
+          "accuracy_ci": [
+            0.6747,
+            0.7707
+          ],
+          "f1_ci": [
+            0.0916,
+            0.2677
+          ],
+          "auc_ci": [
+            0.6741,
+            0.7827
+          ]
+        },
+        "best_params": {
+          "max_depth": 4,
+          "min_samples_split": 2
+        }
+      },
+      "MLP": {
+        "metrics": {
+          "accuracy": 0.712,
+          "precision": 0.4737,
+          "recall": 0.1698,
+          "specificity": 0.9257,
+          "f1_score": 0.25,
+          "tn": 249.0,
+          "fp": 20.0,
+          "fn": 88.0,
+          "tp": 18.0,
+          "auc": 0.7354,
+          "pr_auc": 0.4735
+        },
+        "calibration": {
+          "brier_score": 0.1775,
+          "ece": 0.0499
+        },
+        "confidence_intervals_95": {
+          "accuracy_ci": [
+            0.6667,
+            0.76
+          ],
+          "f1_ci": [
+            0.1606,
+            0.3421
+          ],
+          "auc_ci": [
+            0.68,
+            0.788
+          ]
+        },
+        "iterations_to_convergence": 48
+      }
+    }
+  },
+  "odds_ratios_fdr_corrected": {
+    "Cannabis": {
+      "Age": {
+        "coefficient": -0.8622,
+        "standard_error": 0.0767,
+        "odds_ratio": 0.4223,
+        "ci_lower_95": 0.3633,
+        "ci_upper_95": 0.4907,
+        "p_value": 0.0,
+        "q_value_fdr": 0.0,
+        "significant_fdr": true
+      },
+      "Gender": {
+        "coefficient": -0.3809,
+        "standard_error": 0.0736,
+        "odds_ratio": 0.6832,
+        "ci_lower_95": 0.5914,
+        "ci_upper_95": 0.7893,
+        "p_value": 0.0,
+        "q_value_fdr": 1e-06,
+        "significant_fdr": true
+      },
+      "Education": {
+        "coefficient": -0.4798,
+        "standard_error": 0.0734,
+        "odds_ratio": 0.6189,
+        "ci_lower_95": 0.536,
+        "ci_upper_95": 0.7147,
+        "p_value": 0.0,
+        "q_value_fdr": 0.0,
+        "significant_fdr": true
+      },
+      "Nscore": {
+        "coefficient": -0.1866,
+        "standard_error": 0.0859,
+        "odds_ratio": 0.8298,
+        "ci_lower_95": 0.7012,
+        "ci_upper_95": 0.982,
+        "p_value": 0.029895,
+        "q_value_fdr": 0.044289,
+        "significant_fdr": true
+      },
+      "Impulsive": {
+        "coefficient": -0.0282,
+        "standard_error": 0.0918,
+        "odds_ratio": 0.9722,
+        "ci_lower_95": 0.8122,
+        "ci_upper_95": 1.1638,
+        "p_value": 0.758905,
+        "q_value_fdr": 0.820438,
+        "significant_fdr": false
+      },
+      "Ascore": {
+        "coefficient": -0.014,
+        "standard_error": 0.0754,
+        "odds_ratio": 0.9861,
+        "ci_lower_95": 0.8506,
+        "ci_upper_95": 1.1432,
+        "p_value": 0.853028,
+        "q_value_fdr": 0.853028,
+        "significant_fdr": false
+      },
+      "Escore": {
+        "coefficient": -0.3263,
+        "standard_error": 0.089,
+        "odds_ratio": 0.7216,
+        "ci_lower_95": 0.606,
+        "ci_upper_95": 0.8592,
+        "p_value": 0.000248,
+        "q_value_fdr": 0.000662,
+        "significant_fdr": true
+      },
+      "Oscore": {
+        "coefficient": 0.9142,
+        "standard_error": 0.0859,
+        "odds_ratio": 2.4948,
+        "ci_lower_95": 2.1081,
+        "ci_upper_95": 2.9526,
+        "p_value": 0.0,
+        "q_value_fdr": 0.0,
+        "significant_fdr": true
+      },
+      "Cscore": {
+        "coefficient": -0.2538,
+        "standard_error": 0.0854,
+        "odds_ratio": 0.7759,
+        "ci_lower_95": 0.6563,
+        "ci_upper_95": 0.9172,
+        "p_value": 0.002963,
+        "q_value_fdr": 0.005926,
+        "significant_fdr": true
+      },
+      "SS": {
+        "coefficient": 0.5921,
+        "standard_error": 0.1006,
+        "odds_ratio": 1.8078,
+        "ci_lower_95": 1.4842,
+        "ci_upper_95": 2.202,
+        "p_value": 0.0,
+        "q_value_fdr": 0.0,
+        "significant_fdr": true
+      }
+    },
+    "CNS Stimulants": {
+      "Age": {
+        "coefficient": -0.6179,
+        "standard_error": 0.0746,
+        "odds_ratio": 0.5391,
+        "ci_lower_95": 0.4658,
+        "ci_upper_95": 0.6239,
+        "p_value": 0.0,
+        "q_value_fdr": 0.0,
+        "significant_fdr": true
+      },
+      "Gender": {
+        "coefficient": -0.2514,
+        "standard_error": 0.0686,
+        "odds_ratio": 0.7777,
+        "ci_lower_95": 0.6799,
+        "ci_upper_95": 0.8896,
+        "p_value": 0.000247,
+        "q_value_fdr": 0.000662,
+        "significant_fdr": true
+      },
+      "Education": {
+        "coefficient": -0.073,
+        "standard_error": 0.0704,
+        "odds_ratio": 0.9296,
+        "ci_lower_95": 0.8099,
+        "ci_upper_95": 1.0671,
+        "p_value": 0.29976,
+        "q_value_fdr": 0.386787,
+        "significant_fdr": false
+      },
+      "Nscore": {
+        "coefficient": 0.1411,
+        "standard_error": 0.0759,
+        "odds_ratio": 1.1516,
+        "ci_lower_95": 0.9924,
+        "ci_upper_95": 1.3363,
+        "p_value": 0.062979,
+        "q_value_fdr": 0.083971,
+        "significant_fdr": false
+      },
+      "Impulsive": {
+        "coefficient": 0.1749,
+        "standard_error": 0.0845,
+        "odds_ratio": 1.1911,
+        "ci_lower_95": 1.0094,
+        "ci_upper_95": 1.4055,
+        "p_value": 0.038411,
+        "q_value_fdr": 0.054872,
+        "significant_fdr": false
+      },
+      "Ascore": {
+        "coefficient": -0.1872,
+        "standard_error": 0.068,
+        "odds_ratio": 0.8293,
+        "ci_lower_95": 0.7257,
+        "ci_upper_95": 0.9475,
+        "p_value": 0.005926,
+        "q_value_fdr": 0.010774,
+        "significant_fdr": true
+      },
+      "Escore": {
+        "coefficient": 0.0279,
+        "standard_error": 0.0758,
+        "odds_ratio": 1.0283,
+        "ci_lower_95": 0.8862,
+        "ci_upper_95": 1.1931,
+        "p_value": 0.713114,
+        "q_value_fdr": 0.813453,
+        "significant_fdr": false
+      },
+      "Oscore": {
+        "coefficient": 0.2369,
+        "standard_error": 0.0721,
+        "odds_ratio": 1.2673,
+        "ci_lower_95": 1.1002,
+        "ci_upper_95": 1.4598,
+        "p_value": 0.001023,
+        "q_value_fdr": 0.002273,
+        "significant_fdr": true
+      },
+      "Cscore": {
+        "coefficient": -0.2284,
+        "standard_error": 0.076,
+        "odds_ratio": 0.7958,
+        "ci_lower_95": 0.6857,
+        "ci_upper_95": 0.9237,
+        "p_value": 0.002664,
+        "q_value_fdr": 0.005608,
+        "significant_fdr": true
+      },
+      "SS": {
+        "coefficient": 0.3454,
+        "standard_error": 0.089,
+        "odds_ratio": 1.4126,
+        "ci_lower_95": 1.1864,
+        "ci_upper_95": 1.6819,
+        "p_value": 0.000105,
+        "q_value_fdr": 0.000322,
+        "significant_fdr": true
+      }
+    },
+    "Psychedelics": {
+      "Age": {
+        "coefficient": -0.9958,
+        "standard_error": 0.093,
+        "odds_ratio": 0.3694,
+        "ci_lower_95": 0.3078,
+        "ci_upper_95": 0.4433,
+        "p_value": 0.0,
+        "q_value_fdr": 0.0,
+        "significant_fdr": true
+      },
+      "Gender": {
+        "coefficient": -0.4606,
+        "standard_error": 0.0805,
+        "odds_ratio": 0.6309,
+        "ci_lower_95": 0.5388,
+        "ci_upper_95": 0.7387,
+        "p_value": 0.0,
+        "q_value_fdr": 0.0,
+        "significant_fdr": true
+      },
+      "Education": {
+        "coefficient": -0.284,
+        "standard_error": 0.0863,
+        "odds_ratio": 0.7528,
+        "ci_lower_95": 0.6356,
+        "ci_upper_95": 0.8915,
+        "p_value": 0.000998,
+        "q_value_fdr": 0.002273,
+        "significant_fdr": true
+      },
+      "Nscore": {
+        "coefficient": -0.1783,
+        "standard_error": 0.0887,
+        "odds_ratio": 0.8367,
+        "ci_lower_95": 0.7031,
+        "ci_upper_95": 0.9956,
+        "p_value": 0.044512,
+        "q_value_fdr": 0.061396,
+        "significant_fdr": false
+      },
+      "Impulsive": {
+        "coefficient": 0.0341,
+        "standard_error": 0.0997,
+        "odds_ratio": 1.0347,
+        "ci_lower_95": 0.8511,
+        "ci_upper_95": 1.2579,
+        "p_value": 0.732108,
+        "q_value_fdr": 0.813453,
+        "significant_fdr": false
+      },
+      "Ascore": {
+        "coefficient": 0.017,
+        "standard_error": 0.0783,
+        "odds_ratio": 1.0172,
+        "ci_lower_95": 0.8724,
+        "ci_upper_95": 1.1859,
+        "p_value": 0.828021,
+        "q_value_fdr": 0.849252,
+        "significant_fdr": false
+      },
+      "Escore": {
+        "coefficient": -0.2413,
+        "standard_error": 0.0866,
+        "odds_ratio": 0.7856,
+        "ci_lower_95": 0.663,
+        "ci_upper_95": 0.9309,
+        "p_value": 0.005321,
+        "q_value_fdr": 0.010136,
+        "significant_fdr": true
+      },
+      "Oscore": {
+        "coefficient": 0.8488,
+        "standard_error": 0.0917,
+        "odds_ratio": 2.3369,
+        "ci_lower_95": 1.9526,
+        "ci_upper_95": 2.7968,
+        "p_value": 0.0,
+        "q_value_fdr": 0.0,
+        "significant_fdr": true
+      },
+      "Cscore": {
+        "coefficient": 0.0654,
+        "standard_error": 0.0873,
+        "odds_ratio": 1.0676,
+        "ci_lower_95": 0.8998,
+        "ci_upper_95": 1.2668,
+        "p_value": 0.453372,
+        "q_value_fdr": 0.549542,
+        "significant_fdr": false
+      },
+      "SS": {
+        "coefficient": 0.5323,
+        "standard_error": 0.1072,
+        "odds_ratio": 1.7028,
+        "ci_lower_95": 1.3802,
+        "ci_upper_95": 2.1009,
+        "p_value": 1e-06,
+        "q_value_fdr": 2e-06,
+        "significant_fdr": true
+      }
+    },
+    "Depressants": {
+      "Age": {
+        "coefficient": -0.189,
+        "standard_error": 0.0694,
+        "odds_ratio": 0.8278,
+        "ci_lower_95": 0.7225,
+        "ci_upper_95": 0.9484,
+        "p_value": 0.006447,
+        "q_value_fdr": 0.011211,
+        "significant_fdr": true
+      },
+      "Gender": {
+        "coefficient": -0.1759,
+        "standard_error": 0.0679,
+        "odds_ratio": 0.8387,
+        "ci_lower_95": 0.7342,
+        "ci_upper_95": 0.9581,
+        "p_value": 0.009607,
+        "q_value_fdr": 0.016012,
+        "significant_fdr": true
+      },
+      "Education": {
+        "coefficient": -0.1576,
+        "standard_error": 0.0684,
+        "odds_ratio": 0.8542,
+        "ci_lower_95": 0.7469,
+        "ci_upper_95": 0.9768,
+        "p_value": 0.021282,
+        "q_value_fdr": 0.032742,
+        "significant_fdr": true
+      },
+      "Nscore": {
+        "coefficient": 0.4536,
+        "standard_error": 0.078,
+        "odds_ratio": 1.574,
+        "ci_lower_95": 1.3507,
+        "ci_upper_95": 1.8342,
+        "p_value": 0.0,
+        "q_value_fdr": 0.0,
+        "significant_fdr": true
+      },
+      "Impulsive": {
+        "coefficient": 0.0389,
+        "standard_error": 0.0835,
+        "odds_ratio": 1.0397,
+        "ci_lower_95": 0.8828,
+        "ci_upper_95": 1.2245,
+        "p_value": 0.640999,
+        "q_value_fdr": 0.754117,
+        "significant_fdr": false
+      },
+      "Ascore": {
+        "coefficient": -0.1726,
+        "standard_error": 0.0671,
+        "odds_ratio": 0.8415,
+        "ci_lower_95": 0.7377,
+        "ci_upper_95": 0.9599,
+        "p_value": 0.010167,
+        "q_value_fdr": 0.016267,
+        "significant_fdr": true
+      },
+      "Escore": {
+        "coefficient": 0.0186,
+        "standard_error": 0.0747,
+        "odds_ratio": 1.0188,
+        "ci_lower_95": 0.8801,
+        "ci_upper_95": 1.1793,
+        "p_value": 0.803304,
+        "q_value_fdr": 0.845583,
+        "significant_fdr": false
+      },
+      "Oscore": {
+        "coefficient": 0.3137,
+        "standard_error": 0.0726,
+        "odds_ratio": 1.3685,
+        "ci_lower_95": 1.1869,
+        "ci_upper_95": 1.5778,
+        "p_value": 1.6e-05,
+        "q_value_fdr": 5.2e-05,
+        "significant_fdr": true
+      },
+      "Cscore": {
+        "coefficient": -0.0665,
+        "standard_error": 0.0747,
+        "odds_ratio": 0.9357,
+        "ci_lower_95": 0.8082,
+        "ci_upper_95": 1.0833,
+        "p_value": 0.373654,
+        "q_value_fdr": 0.467067,
+        "significant_fdr": false
+      },
+      "SS": {
+        "coefficient": 0.296,
+        "standard_error": 0.0896,
+        "odds_ratio": 1.3445,
+        "ci_lower_95": 1.1279,
+        "ci_upper_95": 1.6026,
+        "p_value": 0.000956,
+        "q_value_fdr": 0.002273,
+        "significant_fdr": true
+      }
+    }
+  }
+}

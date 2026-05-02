@@ -1,0 +1,30 @@
+\begin{table*}[t]
+\caption{5-Fold Outer Stratified Cross-Validation Tournament (Mean $\pm$ Standard Deviation across Folds)}
+\label{tab:cv_results}
+\centering
+\resizebox{\textwidth}{!}{%
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{llccccc}
+\hline \hline
+\textbf{Substance Target} & \textbf{Model Architecture} & \textbf{CV Accuracy} & \textbf{CV F1-Score} & \textbf{CV AUC-ROC} & \textbf{CV PR-AUC} & \textbf{CV Brier Score} \\
+\hline
+\textbf{Cannabis} & Scratch Regularized LogReg & $\mathbf{0.7922 \pm 0.0260}$ & $\mathbf{0.8025 \pm 0.0241}$ & $\mathbf{0.8710 \pm 0.0176}$ & $\mathbf{0.8872 \pm 0.0183}$ & $\mathbf{0.1457 \pm 0.0109}$ \\
+ & Tuned Random Forest (Inner CV) & $0.7848 \pm 0.0213$ & $0.7938 \pm 0.0208$ & $0.8665 \pm 0.0187$ & $0.8857 \pm 0.0205$ & $0.1522 \pm 0.0082$ \\
+ & Early-Stopped MLP Benchmark & $0.7890 \pm 0.0205$ & $0.8010 \pm 0.0170$ & $0.8691 \pm 0.0197$ & $0.8858 \pm 0.0225$ & $0.1473 \pm 0.0126$ \\
+\hline
+\textbf{CNS Stimulants} & Scratch Regularized LogReg & $\mathbf{0.7406 \pm 0.0094}$ & $\mathbf{0.5527 \pm 0.0218}$ & $\mathbf{0.7911 \pm 0.0260}$ & $\mathbf{0.6176 \pm 0.0438}$ & $\mathbf{0.1698 \pm 0.0093}$ \\
+ & Tuned Random Forest (Inner CV) & $0.7400 \pm 0.0091$ & $0.5179 \pm 0.0285$ & $0.7905 \pm 0.0273$ & $0.6127 \pm 0.0521$ & $0.1714 \pm 0.0072$ \\
+ & Early-Stopped MLP Benchmark & $0.7374 \pm 0.0124$ & $0.5302 \pm 0.0277$ & $0.7836 \pm 0.0228$ & $0.6091 \pm 0.0387$ & $0.1740 \pm 0.0086$ \\
+\hline
+\textbf{Psychedelics} & Scratch Regularized LogReg & $\mathbf{0.8125 \pm 0.0203}$ & $0.6390 \pm 0.0479$ & $\mathbf{0.8648 \pm 0.0217}$ & $\mathbf{0.6734 \pm 0.0423}$ & $\mathbf{0.1306 \pm 0.0093}$ \\
+ & Tuned Random Forest (Inner CV) & $0.7933 \pm 0.0156$ & $0.5703 \pm 0.0367$ & $0.8569 \pm 0.0197$ & $0.6598 \pm 0.0516$ & $0.1363 \pm 0.0063$ \\
+ & Early-Stopped MLP Benchmark & $0.8119 \pm 0.0145$ & $\mathbf{0.6497 \pm 0.0306}$ & $0.8624 \pm 0.0167$ & $0.6621 \pm 0.0544$ & $0.1316 \pm 0.0091$ \\
+\hline
+\textbf{Depressants} & Scratch Regularized LogReg & $0.7294 \pm 0.0186$ & $\mathbf{0.3590 \pm 0.0556}$ & $\mathbf{0.7396 \pm 0.0183}$ & $0.5043 \pm 0.0507$ & $\mathbf{0.1752 \pm 0.0061}$ \\
+ & Tuned Random Forest (Inner CV) & $\mathbf{0.7320 \pm 0.0171}$ & $0.2713 \pm 0.0328$ & $0.7336 \pm 0.0312$ & $\mathbf{0.5111 \pm 0.0490}$ & $0.1769 \pm 0.0070$ \\
+ & Early-Stopped MLP Benchmark & $0.7198 \pm 0.0040$ & $0.2525 \pm 0.1057$ & $0.6952 \pm 0.0538$ & $0.4515 \pm 0.0389$ & $0.1891 \pm 0.0150$ \\
+\hline \hline
+\end{tabular}%
+}
+\end{table*}
