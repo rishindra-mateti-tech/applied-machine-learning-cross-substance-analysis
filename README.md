@@ -3,7 +3,7 @@
 **Author:** Rishindra Mateti  
 **Affiliation:** Department of Computer Science, Wright State University, Fairborn, OH, USA  
 **Contact:** mateti.7@wright.edu | research@rishindramateti.com  
-**Primary Manuscript:** [Applied_Machine_Learning_for_Cross_Substance_Analysis.pdf](Applied_Machine_Learning_for_Cross_Substance_Analysis.pdf) (10-Page Native IEEE Format)  
+**Primary Manuscript:** [Applied_Machine_Learning_for_Cross_Substance_Analysis.pdf](Applied_Machine_Learning_for_Cross_Substance_Analysis.pdf) (Research Paper PDF - 10-Page IEEE Format)  
 
 ---
 
@@ -123,7 +123,7 @@ Adjusted odds ratios are accompanied by analytical 95% Wald confidence intervals
 
 ```text
 ├── Applied_Machine_Learning_for_Cross_Substance_Analysis.tex  # 10-Page IEEE LaTeX Manuscript (Native)
-├── Applied_Machine_Learning_for_Cross_Substance_Analysis.pdf  # Compiled Native IEEE Publication PDF (10 Pages)
+├── Applied_Machine_Learning_for_Cross_Substance_Analysis.pdf  # Compiled Research Paper PDF (10 Pages)
 ├── IEEEtran.cls                                                   # Official IEEE Document Class
 ├── README.md                                                      # Benchmark Documentation & Results
 ├── requirements.txt                                               # Pinned Reproducible Environment Dependencies
@@ -170,7 +170,7 @@ Or run via the compatibility alias:
 python run_experiments.py
 ```
 
-### 3. Compile Native IEEE Research Paper
+### 3. Compile Research Paper (LaTeX)
 ```bash
 pdflatex -interaction=nonstopmode -disable-installer Applied_Machine_Learning_for_Cross_Substance_Analysis.tex
 pdflatex -interaction=nonstopmode -disable-installer Applied_Machine_Learning_for_Cross_Substance_Analysis.tex
@@ -186,13 +186,22 @@ pdflatex -interaction=nonstopmode -disable-installer Applied_Machine_Learning_fo
   title       = {Applied Machine Learning for Cross-Substance Analysis: Psychometric and Demographic Correlates of Consumption Patterns},
   institution = {Department of Computer Science, Wright State University},
   year        = {2026},
-  type        = {Technical Report},
-  url         = {https://github.com/rishindra-mateti-tech/Psychometric-Substance-Vulnerability-Analysis-Clustering-Classification}
-},
-  title       = {Applied Machine Learning for Cross-Substance Analysis: Psychometric and Demographic Correlates of Consumption Patterns},
-  institution = {Department of Computer Science, Wright State University},
-  year        = {2026},
-  type        = {Technical Report},
+  type        = {Research Paper / Technical Report},
   url         = {https://github.com/rishindra-mateti-tech/Psychometric-Substance-Vulnerability-Analysis-Clustering-Classification}
 }
 ```
+
+---
+
+## Dataset Attribution and Ethical Standards
+
+The empirical analyses in this study utilize the publicly available **Drug Consumption (Quantified) Dataset** hosted by the **UCI Machine Learning Repository**:
+* **Source:** Fehrman, E., Muhammad, A. K., Stamp, G., and Egan, V. (2015). *Drug consumption (quantified) Database*. UCI Machine Learning Repository. DOI: 10.24432/C56S34.
+* **Attribution:** This work adheres to the terms of the UCI Machine Learning Repository and Creative Commons licensing. All survey responses are fully anonymized.
+* **Ethical Framing:** This research constitutes an observational applied machine learning benchmark and statistical association analysis. It does not provide clinical diagnosis, medical evaluation, or causal claims regarding substance abuse.
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
