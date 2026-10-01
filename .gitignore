@@ -15,3 +15,7 @@ venv/
 # OS artifacts
 .DS_Store
 Thumbs.db
+
+# Archives
+*.tar.gz
+*.zip
