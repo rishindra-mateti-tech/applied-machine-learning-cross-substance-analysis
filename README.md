@@ -3,7 +3,7 @@
 **Author:** Rishindra Mateti  
 **Affiliation:** Department of Computer Science, Wright State University, Fairborn, OH, USA  
 **Contact:** mateti.7@wright.edu | research@rishindramateti.com  
-**Primary Manuscript:** [Applied_Machine_Learning_for_Cross_Substance_Analysis.pdf](Applied_Machine_Learning_for_Cross_Substance_Analysis.pdf) (Research Paper PDF - 10-Page IEEE Format)  
+**Primary Manuscript:** [Applied_Machine_Learning_for_Cross_Substance_Analysis.pdf](Applied_Machine_Learning_for_Cross_Substance_Analysis.pdf) (Research Paper PDF)  
 
 ---
 
@@ -155,8 +155,8 @@ Adjusted odds ratios are accompanied by analytical 95% Wald confidence intervals
 
 ### 1. Environment Installation
 ```bash
-git clone https://github.com/rishindra-mateti-tech/Psychometric-Substance-Vulnerability-Analysis-Clustering-Classification.git
-cd Psychometric-Substance-Vulnerability-Analysis-Clustering-Classification
+git clone https://github.com/rishindra-mateti-tech/applied-machine-learning-cross-substance-analysis.git
+cd applied-machine-learning-cross-substance-analysis
 pip install -r requirements.txt
 ```
 *Tested with Python 3.10 to 3.13; minimum dependency requirements: `numpy>=1.24.0`, `pandas>=2.0.0`, `scipy>=1.10.0`, `scikit-learn>=1.3.0`, `matplotlib>=3.7.0`, `seaborn>=0.12.0`.*
@@ -187,7 +187,7 @@ pdflatex -interaction=nonstopmode -disable-installer Applied_Machine_Learning_fo
   institution = {Department of Computer Science, Wright State University},
   year        = {2026},
   type        = {Research Paper / Technical Report},
-  url         = {https://github.com/rishindra-mateti-tech/Psychometric-Substance-Vulnerability-Analysis-Clustering-Classification}
+  url         = {https://github.com/rishindra-mateti-tech/applied-machine-learning-cross-substance-analysis}
 }
 ```
 

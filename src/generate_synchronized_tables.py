@@ -483,7 +483,7 @@ def update_readme(cv_md, holdout_md_dict, odds_md):
         "  institution = {Department of Computer Science, Wright State University},\n"
         "  year        = {2026},\n"
         "  type        = {Technical Report},\n"
-        "  url         = {https://github.com/rishindra-mateti-tech/Psychometric-Substance-Vulnerability-Analysis-Clustering-Classification}\n"
+        "  url         = {https://github.com/rishindra-mateti-tech/applied-machine-learning-cross-substance-analysis}\n"
         "}"
     )
     text = old_bib.sub(new_bib, text)
