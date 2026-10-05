@@ -1,8 +1,13 @@
 # Applied Machine Learning for Cross-Substance Analysis: Psychometric and Demographic Correlates of Consumption Patterns
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23166995.svg)](https://doi.org/10.5281/zenodo.23166995)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 **Author:** Rishindra Mateti  
 **Affiliation:** Department of Computer Science, Wright State University, Fairborn, OH, USA  
 **Contact:** mateti.7@wright.edu | research@rishindramateti.com  
+**ORCID:** [0009-0009-5880-8727](https://orcid.org/0009-0009-5880-8727)  
+**Permanent DOI:** [10.5281/zenodo.23166995](https://doi.org/10.5281/zenodo.23166995)  
 **Primary Manuscript:** [Applied_Machine_Learning_for_Cross_Substance_Analysis.pdf](Applied_Machine_Learning_for_Cross_Substance_Analysis.pdf) (Research Paper PDF)  
 
 ---
@@ -187,7 +192,8 @@ pdflatex -interaction=nonstopmode -disable-installer Applied_Machine_Learning_fo
   institution = {Department of Computer Science, Wright State University},
   year        = {2026},
   type        = {Research Paper / Technical Report},
-  url         = {https://github.com/rishindra-mateti-tech/applied-machine-learning-cross-substance-analysis}
+  doi         = {10.5281/zenodo.23166995},
+  url         = {https://doi.org/10.5281/zenodo.23166995}
 }
 ```
 
